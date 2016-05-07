@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ss2cp.cs2110.virginia.edu.game.SplashScreen"
+    android:background="@drawable/splashbackground">
+
+    <TextView
+        android:text="Authors：\nGrace\nDuke\nIssac\nShao\n\nUniversity of Virginia\nCS 2110\nSpring 2015\n\nCredits: \nStack Overflow\nAndroid Studio 2D Game Programming Tutorial by paymon wang-lotfi\nAndroid Tutorial for Beginners by Darryl Bayliss\ndeveloper.android.com\nPictures are from:williammalone.com, Digi300, Ninetails2000"
+        android:textSize="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:onClick="switchToNewGame"
+        android:id="@+id/newGame"
+        android:background="#DE5F29"
+        android:alpha=".5"
+        android:textColor="#FFEF00"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="72dp" />
+    <!--android:layout_toRightOf="@+id/textView"-->
+    <!--android:layout_toEndOf="@+id/textView" -->
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:onClick="switchToGame"
+
+        android:id="@+id/LoadGame"
+        android:background="#DE5F29"
+        android:alpha=".5"
+        android:textColor="#FFEF00"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="72dp"
+        android:layout_marginEnd="72dp" />
+
+</RelativeLayout>

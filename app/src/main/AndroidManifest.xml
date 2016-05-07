@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ss2cp.cs2110.virginia.edu.game" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Game"
+            android:label="@string/title_activity_splash_screen"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".NewGame"
+            android:label="@string/title_activity_new_game"
+            android:parentActivityName=".SplashScreen"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ss2cp.cs2110.virginia.edu.game.SplashScreen" />
+        </activity>
+        <activity
+            android:name=".LoadScreen"
+            android:label="@string/title_activity_load_screen"
+            android:parentActivityName=".SplashScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ss2cp.cs2110.virginia.edu.game.SplashScreen" />
+        </activity>
+        <activity
+            android:name=".HighScore"
+            android:label="@string/title_activity_high_score" >
+        </activity>
+    </application>
+
+</manifest>

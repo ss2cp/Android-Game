@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".Credits">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Authors：\nGrace\nDuke\nIssac\nShao\n\nUniversity of Virginia\nCS 2110\nSpring 2015"
+        android:id="@+id/splashScreenText1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="10dp"
+        android:text="Credits: Stack Overflow\nAndroid Studio 2D Game Programming Tutorial by paymon wang-lotfi\nAndroid Tutorial for Beginners by Darryl Bayliss\ndeveloper.android.com\nictures are from:williammalone.com, Digi300, Ninetails2000"
+        android:id="@+id/splashScreenText2"
+        android:layout_marginTop="175dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
